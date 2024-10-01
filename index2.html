@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CrowdFunding DApp</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<span class="navbar-logo">CrowdFunding DApp</span>
+	</div>
+	<div class="container">
+		<h1>CrowdFunding Campaign</h1>
+		<div class="info">
+			<p><strong>Current Balance:</strong> <span id="balance"></span> ETH</p>
+			<p><strong>Raised Amount:</strong> <span id="raisedAmount"></span> ETH</p>
+			<p><strong>Target:</strong> <span id="target"></span> ETH</p>
+			<p><strong>Deadline:</strong> <span id="deadline"></span></p>
+		</div>
+		<div class="buttons">
+			<button id="connectButton">Connect to MetaMask</button>
+			<button id="contributeButton" disabled>Contribute</button>
+			<button id="refundButton" disabled>Refund</button>
+			<button id="withdrawButton" disabled>Withdraw</button>
+		</div>
+
+	</div>
+
+	<div class="about-us">
+		<h2 class="about-us-title">About Us</h2>
+
+		<div class="card-container">
+			<div class="card">
+				<h3>Raised Amount</h3>
+				<p><span id="raisedAmountAboutUs"></span> ETH</p>
+			</div>
+			<div class="card">
+				<h3>Target</h3>
+				<p><span id="targetAboutUs"></span> ETH</p>
+			</div>
+			<div class="card">
+				<h3>Deadline</h3>
+				<p><span id="deadlineAboutUs"></span></p>
+			</div>
+			<div class="card">
+				<h3>Number of Contributions</h3>
+				<p><span id="noOfContributions"></span></p>
+			</div>
+		</div>
+
+		<div class="about-us-text">
+			<p>
+				Welcome to our CrowdFunding campaign! We are a passionate team dedicated to making a positive impact
+				through
+				innovative projects.
+				Our goal is to raise the target amount. We greatly appreciate your contribution and support toward our
+				mission.
+			</p>
+		</div>
+	</div>
+
+
+
+	<footer class="footer">
+		<div class="footer-content">
+			<p>&copy; 2023 CrowdFunding DApp. All rights reserved.</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+	<script src="app3.js"></script>
+</body>
+
+</html>
